@@ -26,7 +26,7 @@ yahoo_finance_tool = Tool(
 
 
 os.environ['GROQ_API_KEY'] = st.secrets["GROQ_API_KEY"]
-llm_groq = ChatGroq(model="llama3-groq-70b-8192-tool-use-preview")
+llm = ChatGroq(model="llama3-groq-70b-8192-tool-use-preview")
 
 
 stockPriceAnalyst = Agent(
